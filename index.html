@@ -42,9 +42,17 @@ Discutir na internet</p>
 <h3>O que responder quando alguém reage com '😍'?
     <p>É de senso comum que ninguém sabe responder quando alguém reage seu story com esse emoji né?! E sabemos também que é usado para puxar assunto com alguém que tem interesse mas não quer se esforçar muito. Por isso, as melhors respostas são:
         quando não tem interesse: bloqueia!
-        quando se tem interesse: (senso comum)
+        quando se tem interesse: (senso comum) "gostou?? pega pra vc"
         <img src="emoji.jpg" alt="emoji">
     </p>
     <button>❤️<span>0</span></button>
 </h3>
 </body>
+<script>
+    const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
